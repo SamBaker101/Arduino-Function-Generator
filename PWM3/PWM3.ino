@@ -1,4 +1,10 @@
 
+/*
+ * www.SamVsSound.com
+ * Arduino PWM Function Generator
+ * 11/14/2020
+ */
+
 #define PWM_PIN 5            //PWM output at pin5
 #define ANALOG_0 A0          //Input for sample_time
 #define SWITCH_PIN 2         //Push button to switch waveform
@@ -11,7 +17,7 @@ int rsaw_table[100];
 int lsaw_table[100];
 int triangle_table[100];
 
-volatile int switch_state = LOW;
+volatile int switch_state = HIGH;
 
 int table = 0;
 /*
